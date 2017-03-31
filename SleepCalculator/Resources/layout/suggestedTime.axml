@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <android.support.v7.widget.CardView 
+      xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        local:cardElevation="4dp"
+        local:contentPadding="5dp">
+        <TextView
+            android:text="If you head to bed at this time, you should set your alarm to one of the following times:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            fontPath="Fonts/clairehandregular.ttf"
+            android:id="@+id/textView1" />
+    </android.support.v7.widget.CardView>
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20px"
+        android:gravity="center"
+        android:verticalSpacing="15px"
+        android:columnWidth="110dp"
+        android:id="@+id/suggestedTime_gvSuggestedTimeAlarm"
+        android:numColumns="auto_fit" />
+</LinearLayout>

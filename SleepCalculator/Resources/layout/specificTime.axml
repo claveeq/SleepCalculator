@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <android.support.v7.widget.CardView xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        local:cardElevation="4dp"
+        local:contentPadding="5dp">
+        <TextView
+            android:text="Pick the time you want to wake up at then tap CALCULATE."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50px"
+            fontPath="Fonts/clairehandregular.ttf"
+            android:id="@+id/textView1"
+            android:textSize="30px" />
+    </android.support.v7.widget.CardView>
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker1"
+        android:timePickerMode="spinner" />
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/tvTime" />
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:verticalSpacing="15px"
+        android:columnWidth="110dp"
+        android:id="@+id/specificTime_gvSpecificTimeAlarm"
+        android:numColumns="auto_fit" />
+    <Button
+      android:text="Set Alarm"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/btnSetSpecificAlarm" />
+</LinearLayout>

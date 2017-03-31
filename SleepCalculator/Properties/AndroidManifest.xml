@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SleepCalculator.SleepCalculator" android:versionCode="1" android:versionName="1.0">
-  <uses-sdk android:minSdkVersion="16" />
-  <application android:label="SleepCalculator"></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="SleepCalculator.SleepCalculator" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" />
+	<uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+	<application android:label="SleepCalculator" android:theme="@style/MyTheme" android:icon="@drawable/Icon" />
 </manifest>
